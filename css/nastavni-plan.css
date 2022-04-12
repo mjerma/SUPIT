@@ -1,0 +1,148 @@
+#search>label,#search-subject{
+    display: block;
+}
+
+#search label{
+    margin:0.5rem 0;
+    font-weight:bold;
+    text-align: left;
+}
+
+#search-subject{
+    border: 0.1rem solid #ccc;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+#search{
+    animation: input-fly-in 1.5s ease-in-out forwards;
+    visibility: hidden;
+}
+
+@keyframes input-fly-in{
+    0%{
+        transform: translateX(180vh);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.o-nama-title{
+    margin-bottom: 5rem;
+}
+
+.section-container{
+    min-height: 40rem;
+}
+
+.section-content-container{
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    height: auto;
+    max-height: 100%;
+}
+
+.section-content-container-div{
+    flex:30%;
+    margin-bottom: 2rem;
+}
+
+#subject-table{
+    display: none;
+    text-align: left;
+    width: 100%;
+    margin-left: 4%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#subject-table tr:nth-last-child(2){
+    border-bottom: 0.2rem solid black;
+}
+
+.subject-row:nth-child(even){
+    background-color: rgb(241, 241, 241);
+}
+
+.subject-table-item{
+    padding: 0.4rem;
+}
+
+#info-row{
+    border-top: 0.2rem solid #ccc;
+    font-weight: bold;
+}
+
+#sum-row{
+    font-weight: bold;
+}
+
+#sum-ects{
+    color: red;
+}
+
+#sum-hours{
+    color: red;
+}
+
+.subject-w{
+    width: 95%;
+}
+
+.ects-w{
+    width: 1%;
+}
+
+.hours-w{
+    width: 1%;
+}
+
+.p-w{
+    width: 1%;
+}
+
+.v-w{
+    width:1%;
+}
+
+.tip-w{
+    width: 1%;
+}
+
+.ui-autocomplete{
+   list-style: none;
+   width: 20%;
+   border: 0.1rem solid #ccc;
+   border-radius: 1%;
+}
+
+.ui-autocomplete li{
+    padding: 1rem 0.8rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.ui-state-focus{
+    background-color: rgb(241, 241, 241);
+ }
+
+ .btn-delete{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+ }
+
+ .ui-helper-hidden-accessible { 
+    display:none; 
+}
+
+@media (max-width: 768px){
+    .section-content-container{
+        flex-direction: row;
+    }
+}

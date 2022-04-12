@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SUPIT - projektni zadatak</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo_container">
+          <img src="/img/Algebra-logo.png" alt="" />
+        </div>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="/main.html"><i class="fas fa-home icon"></i>Početna</a></li>
+            <li><a href="/o-nama.html"><i class="fas fa-address-card icon"></i>O nama</a></li>
+            <li><a href="/novosti.html"><i class="fas fa-newspaper icon"></i>Novosti</a></li>
+            <li><a href="/nastavni-plan.html"><i class="fas fa-info-circle icon"></i>Nastavni plan</a></li>
+            <li><a href="#" onclick="showForm()"><i class="fas fa-envelope icon"></i>Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="content">
+          <div class="title-container">
+            <h1 class="typewriter"></h1>
+          </div>
+          <video autoplay muted loop src="/video/typingOnlaptop.mp4">
+          </video>
+        </div>
+        <div id="bg-modal">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <i class="fas fa-envelope icon modal-icon"></i>
+                    <h1>Kontaktirajte nas</h1>
+                </div>
+                <div class="form-content-container">
+                    <form action="" id="form-id" onsubmit="return submitForm()">
+                        <label for="input-full-name">Puno ime:</label>
+                        <input type="text" id="input-full-name" class="form-content" required>
+                        <label for="input-email">E-mail:</label>
+                        <input type="email" id="input-email" class="form-content" required>
+                        <label for="input-msg-importance">Važnost poruke:</label>
+                        <select id="input-msg-importance" class="form-content">
+                            <option value="visoka">Visoka</option>
+                            <option value="niska">Niska</option>
+                        </select>
+                        <label for="input-msg">Vaša poruka:</label>
+                        <textarea id="input-msg" class="form-content" required></textarea>
+                        <label for="newsletter-checkbox">Primaj newsletter:</label>
+                        <input id="newsletter-checkbox" type="checkbox">
+                        <div class="action-buttons">
+                            <button type="submit" id="btn-send">Pošalji</button>
+                            <button type="reset" id="btn-cancel" onclick="closeForm()">Odustani</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/node_modules/typed.js/lib/typed.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/kontakt.js"></script>
+  </body>
+</html>
+
